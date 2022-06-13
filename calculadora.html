@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script>
+        function clr()
+        {
+            document.getElementById("result").value = ""
+        }
+
+        function display(val)
+        {
+            document.getElementById("result").value+=val
+        }
+        
+        function solve()
+        {
+            let x = document.getElementById("result").value
+            let y = eval(x)
+            document.getElementById("result").value = y
+        }
+    </script>
+</head>
+<body>
+    <style>
+        body {
+            background-image:linear-gradient(#bc8c2f, #a19d9d);
+            background-attachment: fixed;
+            font-family: sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #273241;
+        }
+        nav {
+            background-color: #273241;
+        }
+        main div {
+            display: flex;
+            align-items: flex-start;
+        }
+        table {
+            border:1px solid;
+            width: 100%;
+        }
+        input {
+            width: 99%;
+            height: 100px;
+            font-size: 30px;
+            background-color: #eda388;
+            border: 1px;
+            border-color: aliceblue;
+        }
+        button {
+            border: none;
+            background-color: coral;
+            height: 25px;
+            font-size: 16px;
+        }
+        .img-radius {
+            border-radius:50px;
+            margin-top: 5px;
+        }
+        .collumcenter {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .lettercolor {
+            color: aliceblue;
+        }
+        button.lettercolor {
+            background-color: transparent;
+        }
+    </style>
+    <header>
+        <a href="index.html"><img src="team_fortress_logo.png" width="200" height="100" alt="imagem com 'team fortress 2' escrito"></a>
+        <nav>
+            <a href="index.html"><button>Inicio</button></a>
+            <a href="sistemas.html"><button>Sistemas</button></a>
+            <a href="calculadora.html"><button>Calculadora</button></a>
+        </nav>
+        <a href="cadastro.html">
+            <div class="collumcenter">
+                <img class="img-radius" width="60" src="perfil_vazio.png" alt="imagem de perfil">
+                <button class="lettercolor">PERFIL</button>
+            </div>
+        </a>
+    </header>
+    <table>
+        <tr>
+           <td colspan="3"><input type="text" id="result"/></td>
+           <!-- clr() function will call clr to clear all value -->
+           <td><input type="button" value="c" onclick="clr()"/></td>
+        </tr>
+        <tr>
+           <!-- create button and assign value to each button -->
+           <!-- display("1") will call function display to display value -->
+           <td><input type="button" value="1" onclick="display('1')"/></td>
+           <td><input type="button" value="2" onclick="display('2')"/></td>
+           <td><input type="button" value="3" onclick="display('3')"/></td>
+           <td><input type="button" value="/" onclick="display('/')"/></td>
+        </tr>
+        <tr>
+           <td><input type="button" value="4" onclick="display('4')"/></td>
+           <td><input type="button" value="5" onclick="display('5')"/></td>
+           <td><input type="button" value="6" onclick="display('6')"/></td>
+           <td><input type="button" value="-" onclick="display('-')"/></td>
+        </tr>
+        <tr>
+           <td><input type="button" value="7" onclick="display('7')"/></td>
+           <td><input type="button" value="8" onclick="display('8')"/></td>
+           <td><input type="button" value="9" onclick="display('9')"/></td>
+           <td><input type="button" value="+" onclick="display('+')"/></td>
+        </tr>
+        <tr>
+           <td><input type="button" value="." onclick="display('.')"/></td>
+           <td><input type="button" value="0" onclick="display('0')"/></td>
+           <!-- solve function call function solve to evaluate value -->
+           <td><input type="button" value="=" onclick="solve()"/></td>
+           <td><input type="button" value="*" onclick="display('*')"/></td>
+        </tr>
+     </table>
+</body>
+</html>

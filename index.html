@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Economia</title>
+</head>
+<body>
+    <style>
+        body {
+            background-image:linear-gradient(#bc8c2f, #a19d9d);
+            background-attachment: fixed;
+            font-family: sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #273241;
+        }
+        nav {
+            background-color: #273241;
+        }
+        li {
+            background-color: #937451;
+            border: 1px solid;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        button {
+            border: none;
+            background-color: coral;
+            height: 25px;
+            font-size: 16px;
+        }
+        main div {
+            display: flex;
+            align-items: flex-start;
+        }
+        li img {
+            width: 80px;
+        }
+        .img-radius {
+            border-radius:50px;
+            margin-top: 5px;
+        }
+        .bordertop {
+            border-top: 1px solid;
+        }
+        .centered {
+            margin: 0 auto;
+            display:block;
+        }
+        .collumcenter {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .divwidth {
+            width: 728px;
+        }
+        .lettercolor {
+            color: aliceblue;
+        }
+        .text-align {
+            text-align: center;
+        }
+        .noborder {
+            border: none;
+            display: list-item;
+            list-style: initial;
+            margin: 10px;
+        }
+        .ulpadding {
+            padding: 15px;
+        }
+        button.lettercolor {
+            background-color: transparent;
+        }
+    </style>
+    <header>
+        <a href="index.html"><img src="team_fortress_logo.png" width="200" height="100" alt="imagem com 'team fortress 2' escrito"></a>
+        <nav>
+            <a href="index.html"><button>Inicio</button></a>
+            <a href="sistemas.html"><button>Sistemas</button></a>
+            <a href="calculadora.html"><button>Calculadora</button></a>
+        </nav>
+        <a href="cadastro.html">
+            <div class="collumcenter">
+                <img class="img-radius" width="60" src="perfil_vazio.png" alt="imagem de perfil">
+                <button class="lettercolor">PERFIL</button>
+            </div>
+        </a>
+    </header>
+    <main class="collumcenter">
+        <section><img src="trade_background.png" class="centered" width="100%" alt="imagem de um demoman vendendo um hat para um iniciante"></section>
+        <div class="divwidth">
+            <section>
+                <h2>Introdução a Economia</h2>
+                <p>A economia do team fortress 2 começou como o sistema econômico da vida real, sendo descendente do escambo. Seu começo se deu pelo sistema de drop de itens, logo após, tivemos a implementação do sistema de trocas entre players e por fim a criação de uma padronização das "moedas" que padronizariam as trocas. As nossas moedas atuais são: o metal de sucata, o metal recuperado, o metal refinado e a chave</p>
+                <p>Embora estejamos falando de trocas dentro do jogo, existem as trocas com instituições (ou sites de troca) que usam dinheiro de verdade como moeda de troca(existe um site em que os itens valem pontos, porém é uma excessão). Antigamente ainda tinhamos como moeda de troca os fones de ouvido.</p>
+                <h2>História das moedas</h2>
+                <p>Para começar a falar das moedas, vamos começar falando sobre o sistema de obtenção de itens, pois o sistema de fabricação de itens(sistema progenitor dos metais) foi implementado depois. A chave e os fones de ouvido também foram implementos depois do sistema de obtenção de itens também.
+                   No inicio, a obtenção de itens se dava por realização de conquistas de classes especificas(scout, pyro, heavy e medic), logo após foi implementado um sistema substituto, muito exigente, para acabar com a possibilidade de fazer grinding(uso de programas para cumprir conquistas automaticamente). 
+                   Ao perceber que muitos jogadores não recebiam itens por longos periodos de tempo, criaram um novo sistema 2.0 para tornar as exigencias mais palpáveis e recolocaram o sistema de conquistas novamente. Embora os chapéus também possam ser obtidos via obtenção, é uma chance bem pequena. 
+                   O sistema de fabricação foi implantado posteriormente com o intuito de ser mais uma opção de obtenção de itens, já que a mochila(inventário) do jogador era bem limitada e também para dar um uso aos itens que um jogador não usava e excluia. 
+                   As chaves foram implementadas por um sistema de caixas de itens aleatórios, onde as chaves são compradas no mercado Mann co., elas são usadas até hoje como moeda de troca tendo em vista o seu uso e à sua segurança(já que outras chaves comemorativas retornavam à chave após os eventos. Apenas algumas). 
+                   Os fones de ouvido por sua vez são provenientes de uma comemoração da entrada do team fortress 2 aos sistema MACos. Seu uso como moeda de troca na época em que forá utilizado se dava pelo fato de que as mochilas eram limitadas e era necessário um item de valor que ocupasse menos espaço.
+                   O sistema de trocas foi implementado em 2011, portanto, o conceito de economia no team fortress 2 só se deu em meados de 2012.
+                </p>
+            </section>
+            <section>
+                <ul>
+                    <li><img src="sucata.png" alt="imagem de uma sucata(canos e peças enferrujadas)"><span>Sucata</span>
+                        <ul class="ulpadding">
+                            <li class="noborder">implementado em 17 de dezembro de 2009</li>
+                            <li class="noborder">vale 0.02-0.03 dolares</li>
+                            <li class="noborder">vale 0.1-0.15 reais</li>
+                            <li class="noborder">vale 0.33 recuperados</li>
+                            <li class="noborder">vale 0.11 refinados</li>
+                            <li class="noborder">porcentagem muito baixa de chave</li>
+                            <li class="noborder">porcentagem muito baixa de fones de ouvido</li>
+                        </ul>
+                    </li>
+                    <li><img src="recuperado.png" alt="imagem de um metal recuperado(chapas de metal)"><span>Recuperado</span>
+                        <ul class="ulpadding">
+                            <li class="noborder">implementado em 17 de dezembro de 2009</li>
+                            <li class="noborder">vale 0.06-0.09 dolares</li>
+                            <li class="noborder">vale 0.3-0.45 reais</li>
+                            <li class="noborder">vale 3 sucatas</li>
+                            <li class="noborder">vale 0.33 refinados</li>
+                            <li class="noborder">porcentagem muito baixa de chave</li>
+                            <li class="noborder">porcentagem muito baixa de fones de ouvido</li>
+                        </ul>
+                    </li>
+                    <li><img src="refinado.png" alt="imagem de um refinado(chapas e engrenagens novas e prateadas)"><span>Refinado</span>
+                        <ul class="ulpadding">
+                            <li class="noborder">implementado em 17 de dezembro de 2009</li>
+                            <li class="noborder">vale 0.18-0.27 dolares</li>
+                            <li class="noborder">vale 0.9-1.35 reais</li>
+                            <li class="noborder">vale 3 recuperados</li>
+                            <li class="noborder">vale 0.99 sucatas</li>
+                            <li class="noborder">vale 0.01 chave</li>
+                            <li class="noborder">porcentagem muito baixa de fones de ouvido</li>
+                        </ul>
+                    </li>
+                    <li><img src="chave.png" alt="imagem de uma chave"><span>Chave</span>
+                        <ul class="ulpadding">
+                            <li class="noborder">implementado em 30 de setembro de 2010</li>
+                            <li class="noborder">vale 1.5 dolares</li>
+                            <li class="noborder">vale 10 reais</li>
+                            <li class="noborder">vale 700 sucatas</li>
+                            <li class="noborder">vale 250 recuperados</li>
+                            <li class="noborder">vale 70 refinados</li>
+                            <li class="noborder">vale 0.2 fones de ouvido</li>
+                        </ul>
+                    </li>
+                    <li><img src="earbuds.png" alt="imagem de um fone de ouvido"><span class="text-align">Fones de ouvido</span>
+                        <ul class="ulpadding">
+                            <li class="noborder">implementado em 10 de junho de 2010</li>
+                            <li class="noborder">vale 10 dolares</li>
+                            <li class="noborder">vale 100 reais</li>
+                            <li class="noborder">vale 5000 sucatas</li>
+                            <li class="noborder">vale 1500 recuperados</li>
+                            <li class="noborder">vale 525 refinados</li>
+                            <li class="noborder">vale 7.6 chaves</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

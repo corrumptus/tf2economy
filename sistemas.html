@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas</title>
+</head>
+<body>
+    <style>
+        body {
+            background-image:linear-gradient(#bc8c2f, #a19d9d);
+            background-attachment: fixed;
+            font-family: sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #273241;
+        }
+        nav {
+            background-color: #273241;
+        }
+        ul {
+            width: 688px;
+        }
+        span {
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        button {
+            border: none;
+            background-color: coral;
+            height: 25px;
+            font-size: 16px;
+        }
+        iframe {
+            border: none;
+            width: 100%;
+            height: 335px;
+        }
+        .img-radius {
+            border-radius:50px;
+            margin-top: 5px;
+        }
+        .collumcenter {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .lettercolor {
+            color: aliceblue;
+        }
+        main.collumcenter {
+            display:flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+        .collumcenter {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .centered {
+            margin: 0 auto;
+            display:block;
+            width: 500px;
+            margin: 10px;
+        }
+        section.collumcenter {
+            display:flex;
+            flex-direction: column;
+            width: 728px;
+        }
+        button.lettercolor {
+            background-color: transparent;
+        }
+    </style>
+    <header>
+        <a href="index.html"><img src="team_fortress_logo.png" width="200" height="100" alt="imagem com 'Team fortress 2' escrito"></a>
+        <nav>
+            <a href="index.html"><button>Inicio</button></a>
+            <a href="sistemas.html"><button>Sistemas</button></a>
+            <a href="calculadora.html"><button>Calculadora</button></a>
+        </nav>
+        <a href="cadastro.html">
+            <div class="collumcenter">
+                <img class="img-radius" width="60" src="perfil_vazio.png" alt="imagem de perfil">
+                <button class="lettercolor">PERFIL</button>
+            </div>
+        </a>
+    </header>
+    <main class="collumcenter">
+        <div>
+            <section class="collumcenter">
+                <h2>Sistema de obtenção de itens</h2>
+                <p>
+                    O sistema de obtenção de itens teve seu começo com a Valve querendo implementar novas armas para as classes do Team fortress 2(29 de abril de 2008), então ela implementou um sistema de marcos de classe que dava itens por cumprir um certo número de conquistas. 
+                    Porém, isso criou um problema: os jogadores começaram a fazer grinding, que é o uso de programas que desbloqueavam conquistas. Com isso surgiu a necessidade de fazer uma nova forma de fazer os joadores jogarem o jogo de fato, foi então que criaram o sistema de sorteio(21 de maio de 2009). 
+                    O sistema de sorteio antigo se baseava em: o jogador joga o jogo e o jogo possui um temporizador que ao final da contagem(o contador possuia um intervalo de 25mins) sorteava um número que determinava se o jogador receberia ou não um item escolhido aleatoriamente(1/4 de chance de ganhar um item), existia também um contador separado(o contador tinha um itervalo de 4h 17mins 10s) que servia para determinar se o jogador receberia um chapéu(1/28 de chance de ganhar um item). 
+                    Porém para um jogador ser elegível a ganhar um item ele precisava cumprir alguns requisitos:
+                </p>
+                <ul>
+                    <li>Estar conectado à comunidade steam(lista de amigos)</li>
+                    <li>Não jogar enquanto a comunidade steam estava em manutenção</li>
+                    <li>Jogar em um servidor que estivesse conectado à steam</li>
+                </ul>
+                <p>
+                    Portanto muitos jogadores não obtiam itens por longos periodos de tempo e até mesmo não eram recompensados por seu tempo jogado(na época, era necessario, em média, 1h 40mins de jogo para conseguir um item), isso também criou os jogadores que faziam idle(existem até servidores que são dedicados a tal, assim como mapas para isso), que é deixar o jogo aberto apenas obtendo itens. Logo surgiu a necessidade de se melhorar esse sistema para que os jogadores pudessem realmente ganhar itens jogando. 
+                    O sistema de obtenção de itens novo garante agora que os players ganharão itens em intervalos de 30 a 70mins sendo que após atingido 10h de jogo semanal não será mais possível ganhar itens. O sistema atual também conta com um armazenador de horas, ou seja, se você não jogou todas as 10h semanais, ele joga o restante para a próxima semana, sendo que isso só acontece 1 vez(não é possível obter mais de 20h semanais de obtenção). 
+                    Para o sistema atual(11 de julho de 2013), um semana acaba as 0h de greenwich na quinta-feira. Atualmente para que um jogador seja elegível a ganhar itens ele precisa estar "jogando ativamente"
+                    <ul>
+                        <li>Estar em um servidor protegido pelo Vac anti-cheat</li>
+                        <li>Estar respondendo às notificações do jogo(um item obtido é uma notificação também)</li>
+                        <li>Estar rodando apenas uma instância do jogo</li>
+                    </ul>
+                <p>
+                    Posteriormente o jogo se tornou gratuito e as contas gratuitas(não premium) não tem acesso a obtenção de itens raros e aos chapéus além de os itens obtidos não poderem ser trocados ou comercializados. 
+                    Com um sistema de obtenção de itens consolidado, a Valve resolveu que poderia reintegrar ao Team fortress 2 o sistema de obtenção de intes por conquistas novamente(29 de maio de 2009).
+                </p>
+            </section>
+            <section class="collumcenter">
+                <h2>Sistema de fabricação</h2>
+                <p>
+                    Com a implementação de um sistema de obtenção de itens, agora a Valve precisava se preocupar com outro detalhe: uma mochila muito pequena resultava em itens indesejados e posteriormente excluidos. Então para contornar esse problema, a Valve resolveu implementar um sistema que poderia dar utilidade aos itens descartáveis e que também retornaria aos jogadores itens que eles de fato queriam, então assim surgiu o sistema de fabricação. 
+                    O sistema de fabricação(17 de dezembro de 2009) usa metais, fichas de slot e classe e armas para a fabricação de novas armas. Contas gratuitas possuem receitas limitadas. Atualmente o jogo possui 156 armas fabricáveis(com 19 reskins) e 428 cosméticos únicos. Também existe um sistema de fabricação especial do dia das bruxas que é feito atráves de uma gargula das almas(a cada evento do dias das bruxas o jogador que não tiver uma gárgula receberá ela automaticamente),
+                    as transmutações, assim como são chamadas, podem te retornar 2 coisas diferentes: ou um contador de estatisticas nível civil ou um item de nível superior.
+                </p>
+            </section>
+            <section class="collumcenter">
+                <h2>Sistema de compras e de caixas</h2>
+                <p>
+                    O sistema de compras da loja da Mann co.(30 de setembro de 2010) é um sistema que permite jogadores a comprarem itens que queiram, como chaves, armas, chapéus e até mesmo coloções de itens para iniciantes entre outras coisas. Mesmo que você esteja gastando dinheiro dentro do jogo pela sua carteira steam, o Team fortress 2 não é um jogo pay-to-win, ou seja, não vence o que gastou mais, mas gastar pelo menos 20 reais no jogo te garante alguns beneficios dentro do jogo
+                    (um deles, e infeliz, é que você pode mandar mensagem no chat das partidas, isso acontece pois o jogo sofreu/sofre de uma onda de bots que faziam spam de mensagens desagradáveis e também de alguns hackers). Caso você crie um item para o jogo e ele venha a entrar para a loja Mann co. você recebe uma porcentagem do valor toda vez que alguém compra o seu item. Por ser uma loja, itens vem e vão, então mesmo que eu fizesse uma lista dos itens que podem ser comprados, eventualmente eles sairiam da loja em algum possível momento.
+                </p>
+            </section>
+            <section class="collumcenter">
+                <h2>Sistema de troca</h2>
+                <p>
+                    Após todos os sistemas de obtenção de item serem consolidados, agora faltava apenas um sistema que pudesse tirar itens de uma mochila e passar para outra, ou seja, de um sistema de trocas, aquele que daria a possibilidade do surgimento de uma economia para o team fortress 2(9 de agosto de 2011).
+                    Pelo fato de que a Valve é uma empresa que criou mais de um jogo multijogador, o sistema de trocas não foi implementado por causa da existencia do Team fortress 2 somente, mas sim, para todos os jogos que ela possuia e também para os jogos de sua plataforma steam. 
+                    Existentem alguns pontos a serem ressaltados sobre o sistema de trocas, tais como:
+                </p>
+                <ul>
+                    <li><span>Reteção de trocas</span>Caso alguém tenha apenas a autenticação via email, a troca ficará retira por 15 dias a menos que as pessoas sejam amigas por mais de 1 ano. Caso alguém tenha ativado o steam guard móvel a menos de 7 dias a troca também ficará retida.</li>
+                    <li><span>Antigamente</span>Antes as trocas só podiam ser realizadas de 8 em 8 itens, a janela de troca possui uma sessão de chat para ser possível conversar com a pessoa, é possível criar ofertas de troca onde a pessoa pode aceitar ou rejeitar sem precisar estar trocando com a outra pessoa, é possível selecionar um item para ser trocado com outra pessoa por dentro do jogo.</li>
+                    <li><span>Itens não-trocáveis</span>Existem itens que podem estar marcados por "não-trocável", que atualmente são impossíveis de ser trocados(ou presenteados, até mesmo com os itens de presenteamento).</li>
+                    <li><span>Itens comprados</span>Itens comprados não são trocáveis por um certo tempo, se a menos de 1 mês você já tiver realizado outra compra, essa compra fica retida por apenas 2 dias. Itens que são do mercado da comunidade são colocados diretamente na mochila do jogador comprador e fica retido por 7 dias.</li>
+                </ul>
+            </section>
+        </div>
+        <div>
+            <section>
+                <img class="centered" src="achando_itens.png" alt="imagem de um conchistinador sendo obtido">
+                <iframe src="https://www.youtube.com/embed/keHZ8knQtu4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            <section>
+                <img class="centered" src="fabricando_item.png" alt="imagem de um menu de fabricação">
+                <iframe src="https://www.youtube.com/embed/kdiqq3jjJtA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            <section>
+                <img class="centered" src="comprando_itens_mann_co.png" alt="imagem do mercado Mann co.">
+                <iframe src="https://www.youtube.com/embed/6qW5LTbkssI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            <section>
+                <img class="centered" src="trocando_item.png" alt="imagem de um menu de troca">
+                <iframe src="https://www.youtube.com/embed/gNbQAaEDEqM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

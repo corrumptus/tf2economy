@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <style>
+        body {
+            background-image:linear-gradient(#bc8c2f, #a19d9d);
+            background-attachment: fixed;
+            font-family: sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #273241;
+        }
+        nav {
+            background-color: #273241;
+        }
+        button {
+            border: none;
+            background-color: coral;
+            height: 25px;
+            font-size: 16px;
+        }
+        input[type="submit"], input[type="reset"] {
+            background-color: #eda388;
+            border: none;
+            border-color: aliceblue;
+            width: 75px;
+            height: 20px;
+        }
+        button.lettercolor {
+            background-color: transparent;
+        }
+        main.collumcenter {
+            display:flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .img-radius {
+            border-radius:50px;
+            margin-top: 5px;
+        }
+        .collumcenter {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .lettercolor {
+            color: aliceblue;
+        }
+    </style>
+    <header>
+        <a href="index.html"><img src="team_fortress_logo.png" width="200" height="100" alt="imagem com 'team fortress 2' escrito"></a>
+        <nav>
+            <a href="index.html"><button>Inicio</button></a>
+            <a href="sistemas.html"><button>Sistemas</button></a>
+            <a href="calculadora.html"><button>Calculadora</button></a>
+        </nav>
+        <a href="cadastro.html">
+            <div class="collumcenter">
+                <img class="img-radius" width="60" src="perfil_vazio.png" alt="imagem de perfil">
+                <button class="lettercolor">PERFIL</button>
+            </div>
+        </a>
+    </header>
+    <main class="collumcenter">
+        <section>
+            <form method="get">
+                <p>Digite seu nome</p>
+                <input type="text" name="nome" placeholder="Preencha seu nome completo" minlength="4" required>
+                <p>Digite sua data de nascimento</p>
+                <input type="date" name="dataNascimento" required>
+                <p>Qual é o seu sexo?</p>
+                <select name="estado civil">
+                    <option value="1" selected>---</option>
+                    <option value="2">Masculino</option>
+                    <option value="3">Feminino</option>
+                    <option value="4">Outros</option>
+                </select>
+                <p>Digite o seu email</p>
+                <input type="email" name="email" placeholder="Preencha seu email completo" required>
+                <p>Digite a sua senha</p>
+                <input type="password" name="password" placeholder="Preencha uma senha" minlength="6" required>
+                <p>Digite a sua senha novamente</p>
+                <input type="password" name="password" placeholder="Preencha uma senha novamente" minlength="6" required>
+                <p>Você é de maior?</p>
+                <label><input type="radio" name="maioridade" value="Sim" required>Sou maior de idade</label><br>
+                <label><input type="radio" name="maioridade" value="Não" checked required>Não sou maior de idade</label><br>
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="Limpar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
